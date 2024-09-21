@@ -201,7 +201,7 @@ namespace MinecraftClient.ChatBots
                 message = Config.TeleportRequestMessageFormat.Replace("{username}", username).Replace("{timestamp}", GetTimestamp()).Trim();
                 teleportRequest = true;
             }
-            else message = text;
+            else message = "```" + text + "```";
 
             if (teleportRequest)
             {
